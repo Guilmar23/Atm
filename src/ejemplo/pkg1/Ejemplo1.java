@@ -17,7 +17,7 @@ public class Ejemplo1 {
     public static void main(String[] args) {
         // TODO code application logic here
         //Creacion de objetos
-        Cuenta cuentaObj = new Cuenta("Guilmar");
+        //Cuenta cuentaObj = new Cuenta("Guilmar");
         //     2         3      1
         //  Cuenta cuentaObj2 = new Cuenta("Joaquin");
         
@@ -54,10 +54,12 @@ public class Ejemplo1 {
         //Pantalla pantallaObj = new Pantalla();
         //pantallaObj.mostrarMensaje("Bienvenido");
         
-        ATM atmObj = new ATM();   
+       //ATM atmObj = new ATM();   
         
-        Deposito deposito0bj = new Deposito();
-        
+       //Deposito deposito0bj = new Deposito();
+       
+       BaseDeDatos bd = new BaseDeDatos();
+       bd.escribir();
         
         
     }

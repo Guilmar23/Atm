@@ -9,7 +9,7 @@ package ejemplo.pkg1;
  *
  * @author kinch
  */
-public class Cuenta {
+public class Cuenta implements Serealizable {
     private float saldo;
     private float saldoFlotante;
     private int numeroDeCuenta;
@@ -20,6 +20,14 @@ public class Cuenta {
             System.out.println("Hola " + nombre);
             
     }//constructor = mismo nombre de la clase
+    
+    public Cuenta(float saldo, float saldoFlotante, int numeroDeCuenta, int nip){
+        this.saldo = saldo;
+        this.saldoFlotante = saldoFlotante;
+        this.numeroDeCuenta = numeroDeCuenta;
+        this.nip = nip;
+    }
+    
 
     public float getSaldo() {
         return saldo;
